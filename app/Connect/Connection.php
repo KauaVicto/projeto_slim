@@ -13,7 +13,7 @@ class Connection
     {
         try {
 
-            $this->con = new \PDO("pgsql:host=localhost;port=5432;dbname=recipes", "postgres", "221122");
+            $this->con = new \PDO("pgsql:host=localhost;port=5432;dbname=postgres", "postgres", "221122");
         } catch (PDOException $e) {
             echo 'Erro na conexão com o banco de dados: ' . $e;
         }
